@@ -1,0 +1,33 @@
+{
+  "name": "ng-submission",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Keep track of pending/error states in Angular",
+  "license": "MIT",
+  "repository": "ajoslin/ng-submission",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "submission",
+    "pending",
+    "error",
+    "loading",
+    "promise"
+  ],
+  "devDependencies": {
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "angular": "1.x"
+  }
+}
