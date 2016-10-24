@@ -20,21 +20,21 @@ angular.module('myapp', [
 function MyController ($http, ngSubmission) {
   var self = this
 
-  this.submission = ngSubmission()
+  var submission = ngSubmission()
 
   this.postForm = function (data) {
-    console.log(this.submission) // => {pending: false, error: null}
+    console.log(submission) // => {pending: false, error: null}
 
     const promise = submission.submit($http.post('/submit', {data: data}))
 
-    console.log(this.submission) // => {pending: true, error: null}
+    console.log(submission) // => {pending: true, error: null}
 
     return promise
       .then(function (response) {
-        console.log(self.submission) // => {pending: false, error: null}
+        console.log(submission) // => {pending: false, error: null}
       })
       .catch(function (error) {
-        console.log(self.submission) // => {pending: false, error: error}
+        console.log(submission) // => {pending: false, error: error}
       })
   }
 }
