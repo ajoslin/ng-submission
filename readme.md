@@ -2,6 +2,8 @@
 
 > Keep track of pending/error states in Angular
 
+Inspired by [bendrucker/submission](https://github.com/bendrucker/submission)
+
 ## Install
 
 ```
