@@ -1,7 +1,7 @@
 {
   "name": "ng-submission",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keep track of pending/error states in Angular",
   "license": "MIT",
   "repository": "ajoslin/ng-submission",
