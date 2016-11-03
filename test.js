@@ -45,3 +45,12 @@ test('error', function (t) {
       t.end()
     })
 })
+
+test('passed-in value is casted to promise', function (t) {
+  var submission = createSubmission()
+  submission.submit(1)
+    .then((result) => {
+      t.equal(result, 1)
+      t.end()
+    })
+})

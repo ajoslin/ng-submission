@@ -17,7 +17,7 @@ function SubmissionService ($q) {
       state.error = null
       _currentPromise = promise
 
-      return promise
+      return $q.resolve(promise)
         .then(function (result) {
           if (_currentPromise === promise) {
             state.pending = false
