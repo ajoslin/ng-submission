@@ -7,7 +7,7 @@ function SubmissionService ($q) {
     var state = {
       pending: false,
       error: null,
-      submit
+      submit: submit
     }
 
     return state
